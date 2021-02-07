@@ -36,7 +36,7 @@ jobs:
       - name: create new ElasticBeanstalk Application version
         run: |
           aws elasticbeanstalk create-application-version \
-          --aplication-name seamless \
+          --application-name seamless \
           --source-bundle S3Bucket="flask-aws-test", S3Key="deploy_package.zip" \
           --version-label "ver-${{github.sha}}" \
           --description "commit -sha-${{github.sha}}"
