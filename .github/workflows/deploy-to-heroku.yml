@@ -15,6 +15,6 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "infopost-test"
           heroku_email: "934s4rn9+heroku@posteo.de"
-          procfile: "web: gunicorn app:application"
+          procfile: "web: gunicorn application:application"
         env:
           NAME: "Tom"
