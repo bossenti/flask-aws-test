@@ -1,4 +1,4 @@
-name: Deploy
+name: Deploy-Heroku
 
 on:
   push:
@@ -17,4 +17,4 @@ jobs:
           heroku_email: "934s4rn9+heroku@posteo.de"
           procfile: "web: gunicorn app:application"
         env:
-          NAME: "Tom"a
+          NAME: "Tom"
